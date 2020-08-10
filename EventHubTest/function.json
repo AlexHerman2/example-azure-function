@@ -1,0 +1,14 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "events",
+      "direction": "in",
+      "eventHubName": "kube-test",
+      "connection": "EVENT_HUB_CONNECTION_STRING",
+      "cardinality": "many",
+      "dataType": "binary"
+    }
+  ]
+}
